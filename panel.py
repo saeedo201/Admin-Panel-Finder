@@ -1,8 +1,38 @@
 #!/usr/bin/env python 2.7.16
 # -*- coding: UTF-8 -*-
-
+import time
+import sys
+import random
 from urllib2 import Request, urlopen, URLError, HTTPError
+def runntek(s):
+        for c in s + '\n':
+                sys.stdout.write(c)
+                sys.stdout.flush()
+                time.sleep(10. / 100)
+if sys.platform == "linux" or sys.platform == "linux2":
+     GL = "\033[96;1m" # Blue aqua
+     BB = "\033[34;1m" # Blue light
+     YY = "\033[33;1m" # Yellow light
+     GG = "\033[32;1m" # Green light
+     WW = "\033[0;1m"  # White light
+     RR = "\033[31;1m" # Red light
+     CC = "\033[36;1m" # Cyan light
+     B = "\033[34m"    # Blue
+     Y = "\033[33;1m"    # Yellow
+     G = "\033[32m"    # Green
+     W = "\033[0;1m"     # White
+     R = "\033[31m"    # Red
+     C = "\033[36;1m"    # Cyan
+     rand = (BB,YY,GG,WW,RR,CC)
+     P = random.choice(rand)
+def cover():
+    print """    
+     """
+    runntek(GL+"           Have A Nice Day. ^_^...")
 
+time.sleep(1)
+print " "
+cover()
 def Wellcome():
         Space(9); print "+++++++++++++++++++++++++++++++++++++"
         Space(9); print "*   +++ Admin Panel Finder    +++   *"
