@@ -3,6 +3,13 @@
 
 from urllib2 import Request, urlopen, URLError, HTTPError
 
+def Wellcome():
+        Space(9); print "+++++++++++++++++++++++++++++++++++++"
+        Space(9); print "*   +++ Admin Panel Finder    +++   *"
+        Space(9); print "*   CopyRight by : Zoal Ktoom       *"
+        Space(9); print "*    Thanks For Usage My Tool       *"
+        Space(9); print "+++++++++++++++++++++++++++++++++++++"
+
 def Space(j):
 	i = 0
 	while i<=j:
@@ -12,8 +19,8 @@ def Space(j):
 
 def findAdmin():
 	f = open("link.txt","r");
-	link = raw_input("Enter Your Site Name \n(ex : example.com or www.example.com ): ")
-	print "\n\nTrying for links.\..\...\ : \n"
+	link = raw_input("Enter Your Site  \n(ex : example.com or www.example.com ): ")
+	print "\n\nTrying for links.\..\\...\\\ : \n"
 	while True:
 		sub_link = f.readline()
 		if not sub_link:
@@ -27,16 +34,9 @@ def findAdmin():
 		except URLError as e:
 			continue
 		else:
-			print "OK => Page Founded",req_link
+			print "OK => Page Founded ----> ",req_link
 			print "Thanks For Usage..!"
 			break
 
-def Credit():
-	Space(9); print "+++++++++++++++++++++++++++++++++++++"
-	Space(9); print "#   +++ Admin Panel Finder    +++   #"
-	Space(9); print "#   CopyRight by : Zoal Ktoom       #"
-	Space(9); print "#    Thanks For Usage My Tool       #"
-	Space(9); print "+++++++++++++++++++++++++++++++++++++"
-
-Credit()
+Wellcome()
 findAdmin()
