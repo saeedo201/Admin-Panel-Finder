@@ -11,7 +11,7 @@ Usage:
 
 3- chmod +x panel.py
 
-4- python2 panel.py
+4- python panel.py
 
 
-Have A Nice Day
+Good Hunting Day ):.
